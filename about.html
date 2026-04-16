@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Monal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: gold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: gold;
+        }
+
+        .about-h1 {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 42px;
+            color: gold;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .about-text h2 {
+            margin-bottom: 15px;
+            color: gold;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer h3 {
+            color: gold;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            .about-h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">The Monal</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="about-h1">About The Monal</h1>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-text">
+
+                <h2>Our History</h2>
+                <p>
+                    The Monal is one of Pakistan’s most iconic restaurant destinations, located in the scenic hills of
+                    Islamabad.
+                    Over the years, it has become a symbol of luxury dining combined with breathtaking natural views.
+                </p>
+
+                <h2>Our Story</h2>
+                <p>
+                    At The Monal, we take pride in offering authentic Pakistani cuisine that reflects a rich cultural
+                    heritage.
+                    Our flavors are inspired by influences from Arabia, Persia, and Central Asia, blending centuries of
+                    tradition
+                    into every dish.
+                </p>
+
+                <p>
+                    Our chefs use traditional cooking techniques with a modern touch, ensuring every meal delivers both
+                    quality
+                    and unforgettable taste.
+                </p>
+
+                <h2>Our Experience</h2>
+                <p>
+                    Beyond food, The Monal offers an experience — a perfect combination of ambience, service, and
+                    panoramic
+                    views. Whether it's a family dinner or a special occasion, we aim to create lasting memories.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>The Monal</h3>
+        <p>Experience the ultimate dining with breathtaking views and premium ambience.</p>
+
+        <h3>Contact Us</h3>
+        <p>Phone: +92 51 2898044</p>
+        <p>Location: Islamabad, Pakistan</p>
+        <p>Email: info@themonal.com.pk</p>
+    </footer>
+
+</body>
+
+</html>

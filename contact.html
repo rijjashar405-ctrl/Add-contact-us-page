@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Monal - Contact</title>
+
+    <style>
+        /* BACKGROUND */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            color: white;
+        }
+
+        /* HEADER NAVBAR (SAME STYLE AS MENU PAGE) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 15px 30px;
+        }
+
+        /* LOGO */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: gold;
+            letter-spacing: 2px;
+        }
+
+        /* NAV LINKS */
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: gold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        /* HEADINGS */
+        .main-heading {
+            text-align: center;
+            font-size: 55px;
+            margin-top: 40px;
+            color: gold;
+            letter-spacing: 4px;
+        }
+
+        .sub-heading {
+            text-align: center;
+            font-size: 28px;
+            color: gold;
+            margin-top: 10px;
+        }
+
+        /* CONTACT BOX */
+        .contact-box {
+            width: 40%;
+            margin: 40px auto;
+            padding: 30px;
+
+            background: rgba(20, 20, 20, 0.65);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            border-radius: 16px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.25);
+        }
+
+        /* FORM */
+        label {
+            color: gold;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #ccc;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        /* BUTTON */
+        input[type="submit"] {
+            background-color: gold;
+            color: black;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            color: gold;
+            border: 1px solid gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR (EXACT SAME STYLE AS YOUR MENU PAGE) -->
+    <header>
+        <div class="logo">The Monal</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <h1 class="main-heading">THE MONAL</h1>
+    <h2 class="sub-heading">Contact Us</h2>
+
+    <div class="contact-box">
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Age</label>
+            <input type="text" placeholder="Enter your age">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea placeholder="Write your message..."></textarea>
+
+            <input type="submit" value="Send Message">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
